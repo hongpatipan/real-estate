@@ -1,0 +1,64 @@
+body {
+    background-image: url('images/home.jpg');
+    background-repeat: repeat-y;
+    width: 100%;
+}
+
+.navbar-inverse {
+    background-color: #334756;
+    border-color: #082032;
+}
+
+.navbar-inverse .navbar-brand {
+    color: white;
+}
+
+a:hover {
+    color: #50546d;
+}
+
+.navbar-inverse .navbar-nav>li>a {
+    color: white;
+}
+h2 {
+    color: white;
+}
+
+label {
+    color: white;
+}
+
+span {
+    color: #ff5a26;
+    font-weight: bold;
+}
+
+.container {
+    margin-top: 3%;
+    width: 60%;
+    background-color: #082032;
+    padding-right: 10%;
+    padding-left: 10%;
+    border-radius: 25px;
+}
+
+.btn-primary {
+    background-color: #ff5a26;
+}
+
+.display-chat {
+    height: 500px;
+    background-color: #334756;
+    margin-bottom: 4%;
+    overflow: auto;
+    padding: 15px;
+    border-radius: 15px;
+}
+
+.message {
+    background-color: #2C394B;
+    color: white;
+    border-radius: 5px;
+    padding: 5px;
+    margin-bottom: 3%;
+}

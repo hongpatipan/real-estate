@@ -1,0 +1,157 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@500&display=swap');
+*
+{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+header
+{
+    position: relative;
+    width: 100%;
+    padding: 30px 100px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+header .logo
+{
+    position: relative;
+    color: #222;
+    text-decoration: none;
+    font-size: 2em;
+    font-weight: 700;
+}
+.group
+{
+    position: relative;
+    display: flex;
+    font-size: 1.25em;
+}
+.group .navigation,
+.group .action
+{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.group ul li
+{
+    list-style: none;
+}
+.group ul li a
+{
+    color: #222;
+    text-decoration: none;
+    margin-left: 30px;
+}
+.group ul li a:hover
+{
+    color: #ff5a26;
+}
+.group .action
+{
+    margin-left: 20px;
+}
+@media (max-width: 991px)
+{
+    .menuToggle
+    {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        font-size: 2em;
+        cursor: pointer;
+        margin-left: 10px;
+        width: 30px;
+        height: 30px;
+        z-index: 1000;
+    }
+    .menuToggle.active
+    {
+        position: fixed;
+        top: 20px;
+        right: 20px;
+    }
+    .menuToggle ion-icon
+    {
+        position: absolute;
+        --ionicon-stroke-width: 20px;
+        display: none;
+    }
+    .menuToggle.active ion-icon:nth-child(1)
+    {
+        display: none;
+    }
+    .menuToggle.active ion-icon:nth-child(2)
+    {
+        display: block;
+    }
+    .menuToggle ion-icon:nth-child(1)
+    {
+        display: block;
+    }
+    .menuToggle ion-icon:nth-child(2)
+    {
+        display: none;
+    }
+    .group .navigation
+    {
+        display: none;
+    }
+    .group .navigation.active
+    {
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        background: #fff;
+        z-index: 999;
+    }
+    .group ul.navigation li a 
+    {
+        font-size: 1.5em;
+        margin-left: 0;
+        margin: 10px 0;
+        display: inline-block;
+    }
+    .group ul li a
+    {
+        margin-left: 20px;
+    }
+    header
+    {
+        padding: 20px
+    }
+    .banner
+    {
+        padding: 0px;
+    }
+    .dont
+    {
+        padding: 50px
+    }
+    .searchBoxform
+    {
+        padding: 20px;
+        transform: translateY(100%);
+    }
+}
+@media (max-width: 768px)
+{
+    .searchBoxform .inputBxform
+    {
+        width: 100%;
+        margin-bottom: 20px;
+    }
+    .searchBoxform .inputBxform p.white
+    {
+        display: none;
+    }
+}

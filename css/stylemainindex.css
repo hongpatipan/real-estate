@@ -1,0 +1,530 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@500&display=swap');
+*
+{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+header
+{
+    position: relative;
+    width: 100%;
+    padding: 30px 100px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+header .logo
+{
+    position: relative;
+    color: #222;
+    text-decoration: none;
+    font-size: 2em;
+    font-weight: 700;
+}
+.group
+{
+    position: relative;
+    display: flex;
+    font-size: 1.25em;
+}
+.group .navigation,
+.group .action
+{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.group ul li
+{
+    list-style: none;
+}
+.group ul li a
+{
+    color: #222;
+    text-decoration: none;
+    margin-left: 30px;
+}
+.group ul li a:hover
+{
+    color: #ff5a26;
+}
+.group .action
+{
+    margin-left: 20px;
+}
+/*.group .action li a
+{
+    font-size: 1.25em;
+}*/
+.group .btnout
+{
+    outline: none;
+    border: none;
+    background: #ff5a26;
+    color: #fff;
+    cursor: pointer;
+    letter-spacing: 2px;
+    padding: 8px 20px;
+    border-radius: 30px;
+    text-decoration: none;
+}
+.banner
+{
+    position: relative;
+    width: 100%;
+    padding: 0 100px;
+}
+.banner .bg
+{
+    position: relative;
+    width: 100%;
+    height: 12vh;
+    background: rgb(255, 255, 255);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.slider
+{
+    overflow: hidden;
+    height: 700px;
+}
+.slider figure div
+{
+    float: left;
+    width: 20%;
+}
+.slider figure img
+{
+    width: 100%;
+    float: left;
+}
+.slider figure
+{
+    position: relative;
+    width: 500%;
+    margin: 0px;
+    left: 0;
+    animation: 20s ravi infinite;
+}
+@keyframes ravi
+{
+    0%{
+        left: 0%;
+    }
+    10%{
+        left: 0%;
+    }
+    12%{
+        left: -100%;
+    }
+    22%{
+        left: -100%;
+    }
+    24%{
+        left: -200%;
+    }
+    34%{
+        left: -200%;
+    }
+    36%{
+        left: -300%;
+    }
+    46%{
+        left: -300%;
+    }
+    48%{
+        left: -400%;
+    }
+    58%{
+        left: -400%;
+    }
+    60%{
+        left: -300%;
+    }
+    70%{
+        left: -300%;
+    }
+    72%{
+        left: -200%;
+    }
+    82%{
+        left: -200%;
+    }
+    84%{
+        left: -100%;
+    }
+    94%{
+        left: -100%;
+    }
+    96%{
+        left: 0%;
+    }
+}
+/*.cover 
+{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}*/
+/*
+.content
+{
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+*/
+/*.headbtn
+{
+    display: inline-block;
+    background: #ff5a26;
+    color: #fff;
+    padding: 20px 40px;
+    text-decoration: none;
+    font-size: 1.1em;
+    margin-top: 20px;
+    letter-spacing: 2px;
+    border-radius: 35px;
+}*/
+.dont
+{
+    padding: 0px 40px;
+}
+.searchBoxform
+{
+    position: absolute;
+    bottom: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    background: #fff;
+    padding: 30px 50px;
+    transform: translateY(50%);
+    box-shadow: 0 5px 25px rgba(0, 0, 0, 0.1);
+    border-radius: 30px;
+}
+.searchBoxform .inputBxform
+{
+    margin: 0 10px;
+}
+.searchBoxform .inputBxform input
+{
+    border: 1px solid #222;
+    outline: none;
+    padding: 10px;
+    width: 100%;
+    min-width: 150px;
+    font-size: 1em;
+    border-radius: 5px;
+}
+.searchBoxform .inputBxform .selectcounty select
+{
+    border: 1px solid #222;
+    outline: none;
+    padding: 10px;
+    width: 100%;
+    min-width: 140px;
+    font-size: 1em;
+    border-radius: 5px;
+}
+.searchBoxform .inputBxform .selecttype select
+{
+    border: 1px solid #222;
+    outline: none;
+    padding: 10px;
+    width: 100%;
+    min-width: 210px;
+    font-size: 1em;
+    border-radius: 5px;
+}
+.searchBoxform .inputBxform .selectStartprice select
+{
+    border: 1px solid #222;
+    outline: none;
+    padding: 10px;
+    width: 100%;
+    min-width: 140px;
+    font-size: 1em;
+    border-radius: 5px;
+}
+.searchBoxform .inputBxform .selectEndprice select
+{
+    border: 1px solid #222;
+    outline: none;
+    padding: 10px;
+    width: 100%;
+    min-width: 140px;
+    font-size: 1em;
+    border-radius: 5px;
+}
+.searchBoxform .inputBxform input[type="Submit"]
+{
+    outline: none;
+    border: none;
+    background: #ff5a26;
+    color: #fff;
+    cursor: pointer;
+    letter-spacing: 2px;
+    padding: 13px;
+    border-radius: 30px;
+}
+.menuToggle
+{
+    display: none;
+}
+.box
+{
+    color: #222;
+    text-decoration: none;
+
+}
+.box h4
+{
+    font-size: 1;
+    font-weight: bold;
+}
+.box .card-text
+{
+    font-size: 14px;
+    color: #9A9A9A;
+}
+.btnnn
+{
+    border: 2px solid black;
+    background-color: white;
+    border-radius: 15px;
+    color: black;
+    padding: 3px 12px;
+    font-size: 16px;
+    cursor: pointer;
+}
+.suc
+{
+    border-color: #ff5a26;
+    color: #ff5a26;
+}
+.suc:hover
+{
+    background-color: #ff5a26;
+    color: #fff;
+}
+.card-title
+{
+    width: 275px;
+    height: 30px;
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+}
+.card-text
+{
+    width: 275px;
+    height: 20px;
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+}
+/* responsive */
+@media (max-width: 1400px)
+{
+    .card-title
+    {
+        width: 230px;
+        height: 25px;
+        overflow: hidden;
+        white-space: nowrap;
+        text-overflow: ellipsis;
+    }
+    .card-text
+    {
+        width: 180px;
+        height: 20px;
+        overflow: hidden;
+        white-space: nowrap;
+        text-overflow: ellipsis;
+    }
+}
+@media (max-width: 1300px)
+{
+    .card-title
+    {
+        width: 210px;
+        height: 25px;
+        overflow: hidden;
+        white-space: nowrap;
+        text-overflow: ellipsis;
+    }
+    .card-text
+    {
+        width: 180px;
+        height: 20px;
+        overflow: hidden;
+        white-space: nowrap;
+        text-overflow: ellipsis;
+    }
+}
+@media (max-width: 1200px)
+{
+    .card-title
+    {
+        width: 180px;
+        height: 25px;
+        overflow: hidden;
+        white-space: nowrap;
+        text-overflow: ellipsis;
+    }
+    .card-text
+    {
+        width: 180px;
+        height: 20px;
+        overflow: hidden;
+        white-space: nowrap;
+        text-overflow: ellipsis;
+    }
+}
+@media (max-width: 991px)
+{
+    .card-title
+    {
+        width: 120px;
+        height: 25px;
+        overflow: hidden;
+        white-space: nowrap;
+        text-overflow: ellipsis;
+    }
+    .card-text
+    {
+        width: 120px;
+        height: 20px;
+        overflow: hidden;
+        white-space: nowrap;
+        text-overflow: ellipsis;
+    }
+    .menuToggle
+    {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        font-size: 2em;
+        cursor: pointer;
+        margin-left: 10px;
+        width: 30px;
+        height: 30px;
+        z-index: 1000;
+    }
+    .menuToggle.active
+    {
+        position: fixed;
+        top: 20px;
+        right: 20px;
+    }
+    .menuToggle ion-icon
+    {
+        position: absolute;
+        --ionicon-stroke-width: 20px;
+        display: none;
+    }
+    .menuToggle.active ion-icon:nth-child(1)
+    {
+        display: none;
+    }
+    .menuToggle.active ion-icon:nth-child(2)
+    {
+        display: block;
+    }
+    .menuToggle ion-icon:nth-child(1)
+    {
+        display: block;
+    }
+    .menuToggle ion-icon:nth-child(2)
+    {
+        display: none;
+    }
+    .group .navigation
+    {
+        display: none;
+    }
+    .group .navigation.active
+    {
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        background: #fff;
+        z-index: 999;
+    }
+    .group ul.navigation li a 
+    {
+        font-size: 1.5em;
+        margin-left: 0;
+        margin: 10px 0;
+        display: inline-block;
+    }
+    .group ul li a
+    {
+        margin-left: 20px;
+    }
+    header
+    {
+        padding: 20px
+    }
+    .banner
+    {
+        padding: 0px;
+    }
+    .dont
+    {
+        padding: 50px
+    }
+    .searchBoxform
+    {
+        padding: 20px;
+        transform: translateY(100%);
+    }
+}
+@media (max-width: 768px)
+{
+    .searchBoxform .inputBxform
+    {
+        width: 100%;
+        margin-bottom: 20px;
+    }
+    .searchBoxform .inputBxform p.white
+    {
+        display: none;
+    }
+    .card-title
+    {
+        width: 320px;
+        height: 25px;
+        overflow: hidden;
+        white-space: nowrap;
+        text-overflow: ellipsis;
+    }
+    .card-text
+    {
+        width: 320px;
+        height: 20px;
+        overflow: hidden;
+        white-space: nowrap;
+        text-overflow: ellipsis;
+    }
+    .dont
+    {
+        padding: 150px
+    }
+}
